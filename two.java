@@ -1,4 +1,3 @@
-package bxfx;
 import java.lang.Math;
 import java.util.Random; 
 public class two {
