@@ -1,4 +1,3 @@
-package bxfx;
 import java.util.Scanner;
 import java.util.Random;
 
@@ -74,8 +73,7 @@ public class passwordGen {
 			  System.out.print(pwd[new Random().nextInt(pwd.length)]);
 			  System.out.print(pwd[new Random().nextInt(pwd.length)]);
 			  System.out.print(pwd[new Random().nextInt(pwd.length)]);
-			  System.out.print(pwd[new Random().nextInt(pwd.length)]);
-			  System.out.print(pwd[new Random().nextInt(pwd.length)]);
+			  System.out.print(pwd[new Random().nextInt(pwd.length)]);		  System.out.print(pwd[new Random().nextInt(pwd.length)]);
 			    break;
 		  case 6:
 			  System.out.print(pwd[new Random().nextInt(pwd.length)]);
