@@ -37,6 +37,8 @@ public class PasswordGenGUI implements ActionListener {
         userText.setFont(f3);
         panel.add(userText); //I want to convert the input from this JTextField to an integer "int" variable.
 			     //Please :-}
+		             //I want to merge Java Swing GUI with my Random Password Generator to create a GUI Password Generator.
+		             //Link to Password Generator: "https://github.com/Shu6hamPrasad/java_randoms/blob/master/passwordGen2.java"
         
         
         loginButton = new JButton("GO!");
