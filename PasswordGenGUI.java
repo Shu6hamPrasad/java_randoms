@@ -1,20 +1,15 @@
-package px;
-
-import java.util.Random; 
-import java.util.Scanner;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class PasswordGenGUI implements ActionListener {
-    private static JLabel userLabel; 
-    private static JTextField userText;
+    private static JLabel userLabel;
     private static JButton loginButton;
-
+    private static JTextField userText;
     public static void main(String[] args){
-        JFrame guilog = new JFrame("Login");
-        guilog.setSize(800, 800);
+        JFrame guilog = new JFrame("Credential Maker");
+        guilog.setSize(385, 165);
         guilog.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         guilog.setResizable(false);
 
@@ -27,33 +22,36 @@ public class PasswordGenGUI implements ActionListener {
         guilog.setVisible(true);
 
     }
-
-    public static void placeComponents(JPanel panel) {
-
+	private static void placeComponents(JPanel panel) {
+		// TODO Auto-generated method stub
         Font  f3  = new Font(Font.DIALOG,  Font.PLAIN, 15);
-
+        panel.setLayout(null);
         
-
-        System.out.println("Random password generator");		
-		char[] pwd1 = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','1','2','3','4','5','6','7','8','9','0','A','B','C','D','E','F','G','H','I','J','K','L','M','O','P','Q','R','S','T','U','V','W','X','Y','Z','!','@','#','$','%','^','&','*'};
-		int options = 0;
-		Scanner sc = new Scanner(System.in);
-		options = sc.nextInt();
-		int picker = 1;
-		System.out.print("Your Password is: ");
-		while(picker<=a) {
-			System.out.print(pwd1[new Random().nextInt(pwd1.length)]);
-			picker++;
-		}
-
-
-    }
-
-    @Override
-    public void actionPerformed(ActionEvent e) {
-    	
+        userLabel = new JLabel("How many digits you want?");
+        userLabel.setBounds(10, 10, 190, 25);
+        userLabel.setFont(f3);
+        panel.add(userLabel);
+        
+        userText = new JTextField(20);
+        userText.setBounds(200, 10, 160, 25);
+        userText.setFont(f3);
+        panel.add(userText); //I want to convert the input from this JTextField to an integer "int" variable.
+			     //Please :-}
+        
+        
+        loginButton = new JButton("GO!");
+        loginButton.setBounds(10, 50, 95, 25);
+        loginButton.setFont(f3);
+        loginButton.addActionListener(new PasswordGenGUI());
+        panel.add(loginButton);
+        
+        
+        
 		
-    }
+	}
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
 }
-
-
