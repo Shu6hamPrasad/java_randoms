@@ -1,4 +1,3 @@
-package Package1;
 import java.util.Scanner;
 public class roots {
     public static void main(String[] args){
